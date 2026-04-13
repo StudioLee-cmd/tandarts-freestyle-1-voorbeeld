@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TandZorg | Tandarts Amsterdam</title>
+<meta name="description" content="TandZorg Amsterdam — uw betrouwbare tandarts voor controle, implantaten, orthodontie en cosmetische tandheelkunde. Boek vandaag nog een afspraak.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">Tand<span>Zorg</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#diensten">Diensten</a></li>
+      <li><a href="#over-ons">Over Ons</a></li>
+      <li><a href="#resultaten">Resultaten</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Afspraak Maken</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="hero">
+  <div class="hero-bg">
+    <img src="images/hero.jpg" alt="TandZorg praktijk Amsterdam" loading="eager">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <span class="hero-badge" data-animate="fade-up">Vertrouwde tandartsen in Amsterdam</span>
+    <h1 data-animate="fade-up" data-delay="0.1">Uw glimlach,<br><span class="text-accent">onze passie</span></h1>
+    <p data-animate="fade-up" data-delay="0.2">Moderne tandheelkunde met persoonlijke aandacht. Van reguliere controles tot geavanceerde implantaten — wij zorgen voor een stralende, gezonde glimlach.</p>
+    <div class="hero-actions" data-animate="fade-up" data-delay="0.3">
+      <a href="#contact" class="btn btn-primary">Gratis Consult</a>
+      <a href="#diensten" class="btn btn-outline">Bekijk Diensten</a>
+    </div>
+    <div class="hero-stats" data-animate="fade-up" data-delay="0.4">
+      <div class="stat"><strong class="counter" data-target="15">0</strong><span>Jaar Ervaring</span></div>
+      <div class="stat"><strong class="counter" data-target="8500">0</strong><span>Tevreden Patienten</span></div>
+      <div class="stat"><strong class="counter" data-target="98">0</strong><span>% Tevredenheid</span></div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</header>
+
+<!-- MARQUEE -->
+<section class="marquee-section">
+  <div class="marquee-track">
+    <div class="marquee-content">
+      <span>Controle & Reiniging</span><span class="marquee-dot"></span>
+      <span>Vullingen & Kronen</span><span class="marquee-dot"></span>
+      <span>Implantaten</span><span class="marquee-dot"></span>
+      <span>Orthodontie</span><span class="marquee-dot"></span>
+      <span>Cosmetisch</span><span class="marquee-dot"></span>
+      <span>Mondhygiene</span><span class="marquee-dot"></span>
+      <span>Controle & Reiniging</span><span class="marquee-dot"></span>
+      <span>Vullingen & Kronen</span><span class="marquee-dot"></span>
+      <span>Implantaten</span><span class="marquee-dot"></span>
+      <span>Orthodontie</span><span class="marquee-dot"></span>
+      <span>Cosmetisch</span><span class="marquee-dot"></span>
+      <span>Mondhygiene</span><span class="marquee-dot"></span>
+    </div>
+  </div>
+</section>
+  <div class="ticker" style="background:var(--color-accent,#f5a623);padding:12px 0;overflow:hidden;">
+    <div style="display:flex;gap:48px;animation:tickerScroll 20s linear infinite;white-space:nowrap;">
+      <span><iconify-icon icon="lucide:smile"></iconify-icon> Controle</span><span><iconify-icon icon="lucide:shield-check"></iconify-icon> Vullingen</span><span><iconify-icon icon="lucide:pin"></iconify-icon> Implantaten</span><span><iconify-icon icon="lucide:move-horizontal"></iconify-icon> Orthodontie</span><span><iconify-icon icon="lucide:sparkles"></iconify-icon> Cosmetisch</span><span><iconify-icon icon="lucide:heart"></iconify-icon> Mondhygiëne</span><span><iconify-icon icon="lucide:smile"></iconify-icon> Controle</span><span><iconify-icon icon="lucide:shield-check"></iconify-icon> Vullingen</span><span><iconify-icon icon="lucide:pin"></iconify-icon> Implantaten</span><span><iconify-icon icon="lucide:move-horizontal"></iconify-icon> Orthodontie</span><span><iconify-icon icon="lucide:sparkles"></iconify-icon> Cosmetisch</span><span><iconify-icon icon="lucide:heart"></iconify-icon> Mondhygiëne</span>
+    </div>
+  </div>
+  <style>@keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}</style>
+  <style>.ticker span{display:inline-flex;align-items:center;gap:8px;font-size:0.85rem;font-weight:700;color:var(--color-bg,#0a0a0f);text-transform:uppercase;letter-spacing:0.05em;}</style>
+
+
+
+  <!-- ======================== BEFORE / AFTER ======================== -->
+  <section class="ba-section" style="height:100vh;position:relative;overflow:hidden;background:#000;">
+    <div style="width:100%;height:100%;position:relative;">
+      <img src="images/craft.jpg" alt="Na" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;">
+      <img src="images/hero.jpg" alt="Voor" id="baBefore" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;">
+      <div id="baLabel" style="position:absolute;z-index:3;bottom:10%;left:50%;transform:translateX(-50%);text-align:center;opacity:0;">
+        <span style="display:inline-block;background:var(--color-accent,#C1FF72);color:#0a0a0a;padding:8px 20px;border-radius:99px;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">Scroll om te zien</span>
+        <h2 style="font-size:clamp(2rem,5vw,3.5rem);font-weight:900;line-height:1.15;color:#fff;text-shadow:0 4px 20px rgba(0,0,0,0.6);">Van oud naar <em style="color:var(--color-accent,#C1FF72);">nieuw</em></h2>
+      </div>
+    </div>
+  </section>
+<!-- DIENSTEN -->
+<section class="services" id="diensten">
+  <div class="container">
+    <div class="section-header" data-animate="fade-up">
+      <span class="section-label">Onze Specialisaties</span>
+      <h2>Complete tandheelkundige<br><span class="text-accent">zorg onder een dak</span></h2>
+      <p>Van preventieve controles tot cosmetische behandelingen — ons ervaren team staat voor u klaar met de nieuwste technieken en apparatuur.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" data-animate="fade-up" data-delay="0">
+        <div class="service-icon"><i data-lucide="smile"></i></div>
+        <h3>Controle & Reiniging</h3>
+        <p>Regelmatige controles en professionele gebitsreiniging voor een optimale mondgezondheid. Preventie staat bij ons voorop.</p>
+        <a href="#contact" class="service-link">Meer info <i data-lucide="arrow-right"></i></a>
+      </div>
+      <div class="service-card" data-animate="fade-up" data-delay="0.05">
+        <div class="service-icon"><i data-lucide="shield-check"></i></div>
+        <h3>Vullingen & Kronen</h3>
+        <p>Duurzame, esthetische restauraties met hoogwaardige materialen. Onzichtbare vullingen en op maat gemaakte kronen.</p>
+        <a href="#contact" class="service-link">Meer info <i data-lucide="arrow-right"></i></a>
+      </div>
+      <div class="service-card" data-animate="fade-up" data-delay="0.1">
+        <div class="service-icon"><i data-lucide="pin"></i></div>
+        <h3>Implantaten</h3>
+        <p>Permanente oplossing voor ontbrekende tanden. Onze implantologen gebruiken 3D-planning voor maximale precisie.</p>
+        <a href="#contact" class="service-link">Meer info <i data-lucide="arrow-right"></i></a>
+      </div>
+      <div class="service-card" data-animate="fade-up" data-delay="0.15">
+        <div class="service-icon"><i data-lucide="move-horizontal"></i></div>
+        <h3>Orthodontie</h3>
+        <p>Onzichtbare beugels en aligners voor een perfect gebit. Geschikt voor zowel kinderen als volwassenen.</p>
+        <a href="#contact" class="service-link">Meer info <i data-lucide="arrow-right"></i></a>
+      </div>
+      <div class="service-card" data-animate="fade-up" data-delay="0.2">
+        <div class="service-icon"><i data-lucide="sparkles"></i></div>
+        <h3>Cosmetisch</h3>
+        <p>Tanden bleken, veneers en smile makeovers. Wij creeren de glimlach waar u altijd van heeft gedroomd.</p>
+        <a href="#contact" class="service-link">Meer info <i data-lucide="arrow-right"></i></a>
+      </div>
+      <div class="service-card" data-animate="fade-up" data-delay="0.25">
+        <div class="service-icon"><i data-lucide="heart"></i></div>
+        <h3>Mondhygiene</h3>
+        <p>Uitgebreide mondhygiene-behandelingen door geregistreerde mondhygienisten. Voorkom tandvleesaandoeningen.</p>
+        <a href="#contact" class="service-link">Meer info <i data-lucide="arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OVER ONS -->
+<section class="about" id="over-ons">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-images" data-animate="fade-right">
+        <div class="about-img-main">
+          <img src="images/about.jpg" alt="TandZorg team" loading="lazy">
+        </div>
+        <div class="about-img-secondary">
+          <img src="images/team.jpg" alt="Tandarts behandeling" loading="lazy">
+        </div>
+        <div class="about-experience">
+          <strong>15+</strong>
+          <span>Jaar Ervaring</span>
+        </div>
+      </div>
+      <div class="about-content" data-animate="fade-left">
+        <span class="section-label">Over TandZorg</span>
+        <h2>Persoonlijke zorg met<br><span class="text-accent">moderne technieken</span></h2>
+        <p>Bij TandZorg Amsterdam combineren we jarenlange ervaring met de nieuwste technologieen in tandheelkunde. Ons team van specialisten staat klaar om u de best mogelijke zorg te bieden in een ontspannen sfeer.</p>
+        <p>We geloven dat iedereen recht heeft op een gezonde, mooie glimlach. Daarom bieden we behandelingen op maat, afgestemd op uw persoonlijke wensen en behoeften.</p>
+        <div class="about-features">
+          <div class="about-feature">
+            <i data-lucide="check-circle"></i>
+            <span>Digitale 3D-scans</span>
+          </div>
+          <div class="about-feature">
+            <i data-lucide="check-circle"></i>
+            <span>Avond- en weekendafspraken</span>
+          </div>
+          <div class="about-feature">
+            <i data-lucide="check-circle"></i>
+            <span>Angstvrije behandeling</span>
+          </div>
+          <div class="about-feature">
+            <i data-lucide="check-circle"></i>
+            <span>Alle verzekeringen welkom</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-primary">Maak een Afspraak</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMAGE CAROUSEL -->
+<section class="carousel-section" id="resultaten">
+  <div class="container">
+    <div class="section-header" data-animate="fade-up">
+      <span class="section-label">Onze Resultaten</span>
+      <h2>Bekijk onze <span class="text-accent">praktijk</span></h2>
+    </div>
+  </div>
+  <div class="carousel" data-animate="fade-up">
+    <div class="carousel-track">
+      <div class="carousel-slide"><img src="images/carousel.jpg" alt="Moderne behandelkamer" loading="lazy"></div>
+      <div class="carousel-slide"><img src="images/project1.jpg" alt="Tandheelkundig resultaat" loading="lazy"></div>
+      <div class="carousel-slide"><img src="images/craft.jpg" alt="Precisie tandheelkunde" loading="lazy"></div>
+      <div class="carousel-slide"><img src="images/detail.jpg" alt="Detail werk" loading="lazy"></div>
+      <div class="carousel-slide"><img src="images/project2.jpg" alt="Behandelresultaat" loading="lazy"></div>
+      <div class="carousel-slide"><img src="images/kitchen.jpg" alt="Praktijk interieur" loading="lazy"></div>
+    </div>
+    <div class="carousel-controls">
+      <button class="carousel-btn carousel-prev" aria-label="Vorige"><i data-lucide="arrow-left"></i></button>
+      <div class="carousel-dots"></div>
+      <button class="carousel-btn carousel-next" aria-label="Volgende"><i data-lucide="arrow-right"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews">
+  <div class="container">
+    <div class="section-header" data-animate="fade-up">
+      <span class="section-label">Patientervaringen</span>
+      <h2>Wat onze patienten <span class="text-accent">zeggen</span></h2>
+    </div>
+    <div class="reviews-grid" data-animate="fade-up">
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"Eindelijk een tandarts waar ik me op mijn gemak voel. Het team is ongelooflijk vriendelijk en de behandeling was pijnloos."</p>
+        <div class="review-author">
+          <strong>Sophie de Vries</strong>
+          <span>Patient sinds 2021</span>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"Mijn implantaatbehandeling was perfect. Van consultatie tot plaatsing, alles werd helder uitgelegd. Zeer aan te raden!"</p>
+        <div class="review-author">
+          <strong>Mark Janssen</strong>
+          <span>Patient sinds 2019</span>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"De onzichtbare beugel heeft mijn glimlach compleet veranderd. Professioneel, modern en altijd op tijd. Top tandarts!"</p>
+        <div class="review-author">
+          <strong>Lisa Bakker</strong>
+          <span>Patient sinds 2022</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="blog" id="blog">
+  <div class="container">
+    <div class="section-header" data-animate="fade-up">
+      <span class="section-label">Kennisbank</span>
+      <h2>Laatste <span class="text-accent">artikelen</span></h2>
+    </div>
+    <div class="blog-grid" data-animate="fade-up">
+      <article class="blog-card">
+        <div class="blog-img"><img src="images/carousel.jpg" alt="Blog: tandenpoetsen tips" loading="lazy"></div>
+        <div class="blog-body">
+          <span class="blog-tag">Preventie</span>
+          <h3>5 Tips voor Gezonde Tanden en Tandvlees</h3>
+          <p>Ontdek de beste dagelijkse gewoontes om uw gebit een leven lang gezond te houden.</p>
+          <a href="#" class="blog-link">Lees meer <i data-lucide="arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="blog-card">
+        <div class="blog-img"><img src="images/craft.jpg" alt="Blog: implantaten" loading="lazy"></div>
+        <div class="blog-body">
+          <span class="blog-tag">Implantaten</span>
+          <h3>Alles Over Tandimplantaten: Wat U Moet Weten</h3>
+          <p>Een compleet overzicht van het implantaatproces, van consultatie tot nazorg.</p>
+          <a href="#" class="blog-link">Lees meer <i data-lucide="arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="blog-card">
+        <div class="blog-img"><img src="images/detail.jpg" alt="Blog: tanden bleken" loading="lazy"></div>
+        <div class="blog-body">
+          <span class="blog-tag">Cosmetisch</span>
+          <h3>Tanden Bleken: Veilig en Effectief bij de Tandarts</h3>
+          <p>Waarom professioneel bleken beter werkt dan thuismiddelen en wat u kunt verwachten.</p>
+          <a href="#" class="blog-link">Lees meer <i data-lucide="arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="blog-card">
+        <div class="blog-img"><img src="images/project1.jpg" alt="Blog: angst voor tandarts" loading="lazy"></div>
+        <div class="blog-body">
+          <span class="blog-tag">Comfort</span>
+          <h3>Angst voor de Tandarts? Zo Helpen Wij U</h3>
+          <p>Moderne technieken en een rustige aanpak maken tandartsbezoek stressvrij.</p>
+          <a href="#" class="blog-link">Lees meer <i data-lucide="arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="blog-card">
+        <div class="blog-img"><img src="images/project2.jpg" alt="Blog: orthodontie volwassenen" loading="lazy"></div>
+        <div class="blog-body">
+          <span class="blog-tag">Orthodontie</span>
+          <h3>Onzichtbare Beugels voor Volwassenen</h3>
+          <p>Steeds meer volwassenen kiezen voor aligners. Lees waarom en hoe het werkt.</p>
+          <a href="#" class="blog-link">Lees meer <i data-lucide="arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="blog-card">
+        <div class="blog-img"><img src="images/kitchen.jpg" alt="Blog: mondhygiene" loading="lazy"></div>
+        <div class="blog-body">
+          <span class="blog-tag">Mondhygiene</span>
+          <h3>Het Belang van Regelmatige Mondhygiene</h3>
+          <p>Waarom halfjaarlijkse controles bij de mondhygienist essentieel zijn.</p>
+          <a href="#" class="blog-link">Lees meer <i data-lucide="arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <div class="cta-bg">
+    <img src="images/cta-bg.jpg" alt="TandZorg praktijk" loading="lazy">
+    <div class="cta-overlay"></div>
+  </div>
+  <div class="container cta-content" data-animate="fade-up">
+    <h2>Klaar voor een <span class="text-accent">stralende glimlach</span>?</h2>
+    <p>Boek vandaag nog uw gratis consult en ontdek wat TandZorg voor u kan betekenen. Ons team staat klaar om u te verwelkomen.</p>
+    <div class="cta-actions">
+      <a href="tel:+31201234567" class="btn btn-primary">Bel Ons: 020 123 4567</a>
+      <a href="#" class="btn btn-outline">Online Boeken</a>
+    </div>
+    <div class="cta-info">
+      <div class="cta-info-item"><i data-lucide="map-pin"></i><span>Keizersgracht 123, Amsterdam</span></div>
+      <div class="cta-info-item"><i data-lucide="clock"></i><span>Ma-Vr 8:00 - 20:00 | Za 9:00 - 14:00</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="footer-logo">Tand<span>Zorg</span></a>
+        <p>Moderne tandheelkunde met een persoonlijke aanpak in het hart van Amsterdam.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Diensten</h4>
+        <ul>
+          <li><a href="#diensten">Controle & Reiniging</a></li>
+          <li><a href="#diensten">Vullingen & Kronen</a></li>
+          <li><a href="#diensten">Implantaten</a></li>
+          <li><a href="#diensten">Orthodontie</a></li>
+          <li><a href="#diensten">Cosmetisch</a></li>
+          <li><a href="#diensten">Mondhygiene</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Praktijk</h4>
+        <ul>
+          <li><a href="#over-ons">Over Ons</a></li>
+          <li><a href="#resultaten">Resultaten</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Algemene Voorwaarden</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>Keizersgracht 123</li>
+          <li>1015 Amsterdam</li>
+          <li><a href="tel:+31201234567">020 123 4567</a></li>
+          <li><a href="mailto:info@tandzorg.nl">info@tandzorg.nl</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 TandZorg Amsterdam. Alle rechten voorbehouden.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="css/script.js"></script>
+
+    // Before/After slider
+    (function() {
+      var before = document.getElementById('baBefore');
+      var label = document.getElementById('baLabel');
+      if (!before || typeof gsap === 'undefined') return;
+      gsap.registerPlugin(ScrollTrigger);
+      var tl = gsap.timeline({
+        scrollTrigger: { trigger: '.ba-section', start: 'top top', end: '+=200%', pin: true, scrub: 0.5, anticipatePin: 1 }
+      });
+      tl.fromTo(before, { clipPath: 'inset(0 0 0 0)' }, { clipPath: 'inset(0 100% 0 0)', duration: 1, ease: 'none' });
+      tl.fromTo(label, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power2.out' }, 0.5);
+    })();
+
+</body>
+</html>
